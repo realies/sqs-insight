@@ -1,6 +1,6 @@
 {
   "name": "sqs-insight",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Gives a small insight into sqs queues.",
   "main": "index.js",
   "scripts": {

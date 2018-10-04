@@ -21,6 +21,17 @@ Copy `config/config.json` to `config/config_local.json` and change it to meet yo
 }
 ```
 
+- `dynamicEndpoints` - An array of Objects defining SQS servers for *dynamically* adding queues to the _endpoints_ list. Each objects needs to have the following keys defined: (_url_ can be omitted if using AWS SQS)
+
+```json
+{
+    "key": "notValidKey",
+    "secretKey": "notValidSecret",
+    "region": "us-east-1",
+    "url": "http://sqs.amazonaws.com/"
+}
+```
+
 ## Start
 run `npm start`, `node index.js` in development or `NODE_ENV=production node index.js` to run it in production mode.
 
